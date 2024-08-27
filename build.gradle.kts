@@ -24,6 +24,7 @@ kotlin {
     jvmToolchain(21)
 }
 
+//Used for debugging
 tasks.withType<CompileUsingKotlinDaemon>().configureEach {
     compilerExecutionStrategy.set(KotlinCompilerExecutionStrategy.IN_PROCESS)
 }
